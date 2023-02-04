@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>GetEmpsServlet</servlet-name>
+        <servlet-class>org.kgc.controller.GetEmpsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddEmpServlet</servlet-name>
+        <servlet-class>org.kgc.controller.AddEmpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ToUpdateEmpServlet</servlet-name>
+        <servlet-class>org.kgc.controller.ToUpdateEmpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateEmpServlet</servlet-name>
+        <servlet-class>org.kgc.controller.UpdateEmpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FireEmpServlet</servlet-name>
+        <servlet-class>org.kgc.controller.FireEmpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FireEmpServlet</servlet-name>
+        <url-pattern>/fireEmp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateEmpServlet</servlet-name>
+        <url-pattern>/updateEmp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ToUpdateEmpServlet</servlet-name>
+        <url-pattern>/toUpdateEmp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddEmpServlet</servlet-name>
+        <url-pattern>/addEmp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetEmpsServlet</servlet-name>
+        <url-pattern>/getEmps</url-pattern>
+    </servlet-mapping>
+</web-app>
