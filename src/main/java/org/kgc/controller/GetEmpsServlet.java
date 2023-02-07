@@ -26,9 +26,11 @@ public class GetEmpsServlet extends HttpServlet {
         String ename = request.getParameter("ename");
         String _deptno = request.getParameter("_deptno");
         int deptno = Integer.parseInt(_deptno);
+        int salary = 0;
         String _salary = request.getParameter("salary");
-        int salary = Integer.parseInt(_salary);
-
+        if(_salary != "") {
+            salary = Integer.parseInt(_salary);
+        }
         EmpService service = new EmpService();
         List<HashMap> emps = service.getEmps(ename,deptno,salary);
 
